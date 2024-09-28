@@ -1,0 +1,6 @@
+SELECT pnum AS 교수번호, pname AS 교수명, ppos AS 직급호봉
+FROM Professor
+WHERE ppos BETWEEN 11 AND 29 AND NOT EXISTS(SELECT *
+                    FROM Student
+                    WHERE Professor.pnum = Student.advise)
+ORDER BY pname;
