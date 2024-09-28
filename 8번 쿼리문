@@ -1,0 +1,17 @@
+/*8. 성적이 상위 0.5%에 속하는 학생과 학점, 학과, 지도교수를 보이시오*/
+SELECT dname AS 학과명, sname AS 학생명, qpa AS 학점,pname AS 지도교수
+FROM( SELECT dname, sname, qpa, pname, RANK() OVER(ORDER BY qpa DESC) 순위 
+        FROM Student, Department, Professor 
+        WHERE Department.dnum = Student.major AND Professor.pnum = Student.advise)
+WHERE 순위<=TRUNC((SELECT COUNT(*) FROM Student) *0.05);
+
+/*3년제 학과 뷰(vw_Department3y)*/
+CREATE VIEW vw_Department3y (dnum, dname, year)
+AS SELECT de.dnum, de.dname, COUNT(DISTINCT st.year)
+FROM Student st, Department de
+WHERE de.dnum = st.major 
+GROUP BY dnum, dname
+HAVING COUNT(DISTINCT year) = 3;
+
+SELECT *
+FROM vw_Department3y;
