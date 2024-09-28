@@ -1,3 +1,5 @@
+/*1.절대평가 기준으로 학점을 부여했을 때 재수강이 가능한 학생명, 강의명, 학번, 성적을 보이시오. 단, 재수강은 C 미만부터 가능하다*/
+
 SELECT st.snum AS 학번, st.sname AS 학생명, co.cname AS 강의명, en.grade AS 성적
 FROM student st, enrol en, course co
 WHERE st.snum = en.snum AND en.cnum = co.cnum and grade < 70;
