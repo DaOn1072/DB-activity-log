@@ -1,0 +1,8 @@
+/*6. 스마트IT과의 웹페이지저작 수업이 공사로 인해 강의실을 변경해야 한다. 옮길 수 있는 빈 강의실을 보이시오. */
+SELECT room AS 빈강의실
+FROM Lecture, Course, Department, Professor
+WHERE Lecture.cnum = Course.cnum AND Department.dnum = Professor.belong AND 
+        Professor.pnum = Lecture.pnum AND dname LIKE '스마트%' AND  time NOT IN (SELECT time
+                                                FROM Lecture, Course
+                                                WHERE Lecture. cnum = Course.cnum AND cname LIKE '웹페이지저작')
+GROUP BY room;
