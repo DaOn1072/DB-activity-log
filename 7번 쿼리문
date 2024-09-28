@@ -1,0 +1,6 @@
+/*7. 스마트it과에서 수요일 회의에 수업이 있어서 불참하는 교수, 강의명, 강의시간을 보이시오.*/
+select DISTINCT pname AS 교수명, cname AS 강의명, SUBSTR(time, 1, 1) AS 강의시간
+from Lecture, Course, Department, Professor
+where Lecture.cnum = Course.cnum AND Department.dnum = Professor.belong AND 
+        Professor.pnum = Lecture.pnum AND dname LIKE '스마트%'AND time BETWEEN 30 AND 39
+GROUP BY pname, cname, time;
