@@ -5,10 +5,27 @@
 해당 프로젝트는 데이터를 직접 입렵하였으며, 한정된 데이터 안에서 가치 있는 정보를 가져오도록 작업했습니다.
 <br>
 </br>
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/b1e8086d-d9da-4ff1-bead-2782452e14e2" alt="1 페이지" />
-</p>
-<p align="center">데이터를 한눈에 볼 수 있도록 모아둔 메인 화면</p>
+<table>
+  <tr>
+    <td>
+      <table>
+        <tr>
+          <th>개체(Entity)</th>
+          <th>관계(Relationship)</th>
+        </tr>
+        <tr><td>student(snum, sname, year, QPA)</td><td>enrol(snum, cnum, grade)</td></tr>
+        <tr><td>professor(pnum, pname, ppos, pphone)</td><td>lecture(pnum, cnum, time, room)</td></tr>
+        <tr><td>department(dnum,dname, dphone, dloc)</td><td>advise(snum, pnum)</td></tr>
+        <tr><td>course(cnum, cname, hrs, credit</td><td>major(snum, dnum)</td></tr>
+        <tr><td></td><td>belong(pnum, dnum)</td></tr>
+      </table>
+    </td>
+    <td>
+      <img src="https://github.com/user-attachments/assets/c8242a44-4ae4-4a2a-8161-03098276004c" alt="설명" width="800" />
+    </td>
+  </tr>
+</table>
+
 
 
 
@@ -73,6 +90,19 @@
   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 18 * 3 + 12 * 2 = 78이므로 총 78개의 카디널리티가 생성된다.
     <h2></h2>
 - STUDENT의 qpa는 학점의 소수 둘째자리까지 표현하도록 한다.
+
+</div>
+</details>
+
+<details>
+<summary>❗ 요구사항 </summary>
+<div markdown="1">
+
+- 학생은 한 명의 지도교수를 가진다.
+- 학생은 한 학과에 속한다.
+- 학생은 여러 강의를 들을 수 있고 여러 학생이 강의를 듣는다.
+- 교수는 여러 과목을 수업할 수 있다.
+- 교수는 한 학과에 속한다.
 
 </div>
 </details>
