@@ -120,7 +120,7 @@
 <div markdown="1">
 </br>
 
-- [테이블 생성 SQL](https://github.com/DaOn1072/DB-activity-log/blob/main/%EC%BF%BC%EB%A6%AC%EB%AC%B8/10%EB%B2%88%20%EC%BF%BC%EB%A6%AC%EB%AC%B8)
+- [1번 쿼리문 답](https://github.com/DaOn1072/DB-activity-log/blob/main/%EC%BF%BC%EB%A6%AC%EB%AC%B8/1%EB%B2%88%20%EC%BF%BC%EB%A6%AC%EB%AC%B8)
 <h2></h2>
 
 - 학생이 등록한 과목을 알아야하기 때문에 학생 테이블의 키본키 학번과 등록 테이블의 외래키 학번을 조인합니다.
@@ -136,7 +136,7 @@
 <div markdown="1">
 </br>
 
-- [테이블 생성 SQL](https://github.com/DaOn1072/DB-activity-log/blob/main/%ED%85%8C%EC%9D%B4%EB%B8%94%20%EC%83%9D%EC%84%B1%20SQL%EB%AC%B8.txt)
+- [2번 쿼리문 답](https://github.com/DaOn1072/DB-activity-log/blob/main/%EC%BF%BC%EB%A6%AC%EB%AC%B8/2%EB%B2%88%20%EC%BF%BC%EB%A6%AC%EB%AC%B8)
 <h2></h2>
 
 - 교수의 소속 학과를 알기 위해서 테이블의 학과번호와 교수 테이블의 belong 값을 조인합니다.
@@ -152,7 +152,7 @@
 <div markdown="1">
 </br>
 
-- [테이블 생성 SQL](https://github.com/DaOn1072/DB-activity-log/blob/main/%ED%85%8C%EC%9D%B4%EB%B8%94%20%EC%83%9D%EC%84%B1%20SQL%EB%AC%B8.txt)
+- [3번 쿼리문 답](https://github.com/DaOn1072/DB-activity-log/blob/main/%EC%BF%BC%EB%A6%AC%EB%AC%B8/3%EB%B2%88%20%EC%BF%BC%EB%A6%AC%EB%AC%B8)
 <h2></h2>
 
 - 학과 번호 중, 해당 학과번호인 것만 검색합니다.
@@ -167,7 +167,7 @@
 <div markdown="1">
 </br>
 
-- [테이블 생성 SQL](https://github.com/DaOn1072/DB-activity-log/blob/main/%ED%85%8C%EC%9D%B4%EB%B8%94%20%EC%83%9D%EC%84%B1%20SQL%EB%AC%B8.txt)
+- [4번 쿼리문 답](https://github.com/DaOn1072/DB-activity-log/blob/main/%EC%BF%BC%EB%A6%AC%EB%AC%B8/4%EB%B2%88%20%EC%BF%BC%EB%A6%AC%EB%AC%B8)
 <h2></h2>
 
 - 같은 값끼리 그룹화될 수 있기 위해 학년과 학과번호를 GROUP BY 합니다.
@@ -183,7 +183,7 @@
 <div markdown="1">
 </br>
 
-- [테이블 생성 SQL](https://github.com/DaOn1072/DB-activity-log/blob/main/%ED%85%8C%EC%9D%B4%EB%B8%94%20%EC%83%9D%EC%84%B1%20SQL%EB%AC%B8.txt)
+- [5번 쿼리문 답](https://github.com/DaOn1072/DB-activity-log/blob/main/%EC%BF%BC%EB%A6%AC%EB%AC%B8/5%EB%B2%88%20%EC%BF%BC%EB%A6%AC%EB%AC%B8)
 <h2></h2>
 
 - 전공 학과를 알기 위해서 학과 테이블의 학과번호와 학생 테이블의 major를 조인합니다.
@@ -198,7 +198,7 @@
 <div markdown="1">
 </br>
 
-- [테이블 생성 SQL](https://github.com/DaOn1072/DB-activity-log/blob/main/%ED%85%8C%EC%9D%B4%EB%B8%94%20%EC%83%9D%EC%84%B1%20SQL%EB%AC%B8.txt)
+- [6번 쿼리문 답](https://github.com/DaOn1072/DB-activity-log/blob/main/%EC%BF%BC%EB%A6%AC%EB%AC%B8/6%EB%B2%88%20%EC%BF%BC%EB%A6%AC%EB%AC%B8)
 <h2></h2>
 
 - 학과의 수업은 해당 학과 건물에서만 진행하므로, 다른 학과의 강의실 번호는 필요하지 않습니다.
@@ -213,7 +213,7 @@
 <div markdown="1">
 </br>
 
-- [테이블 생성 SQL](https://github.com/DaOn1072/DB-activity-log/blob/main/%ED%85%8C%EC%9D%B4%EB%B8%94%20%EC%83%9D%EC%84%B1%20SQL%EB%AC%B8.txt)
+- [7번 쿼리문 답](https://github.com/DaOn1072/DB-activity-log/blob/main/%EC%BF%BC%EB%A6%AC%EB%AC%B8/7%EB%B2%88%20%EC%BF%BC%EB%A6%AC%EB%AC%B8)
 <h2></h2>
 
 - DISTINCT를 사용하여 교수명과  수업명의 중복을 없앱니다.
@@ -229,7 +229,7 @@
 <div markdown="1">
 </br>
 
-- [8번 쿼리문 답](https://github.com/DaOn1072/DB-activity-log/blob/main/%ED%85%8C%EC%9D%B4%EB%B8%94%20%EC%83%9D%EC%84%B1%20SQL%EB%AC%B8.txt)
+- [8번 쿼리문 답](https://github.com/DaOn1072/DB-activity-log/blob/main/%EC%BF%BC%EB%A6%AC%EB%AC%B8/8%EB%B2%88%20%EC%BF%BC%EB%A6%AC%EB%AC%B8)
 <h2></h2>
 
 </div>
@@ -241,7 +241,7 @@
 <div markdown="1">
 </br>
 
-- [9번 쿼리문 답](https://github.com/DaOn1072/DB-activity-log/blob/main/%ED%85%8C%EC%9D%B4%EB%B8%94%20%EC%83%9D%EC%84%B1%20SQL%EB%AC%B8.txt)
+- [9번 쿼리문 답](https://github.com/DaOn1072/DB-activity-log/blob/main/%EC%BF%BC%EB%A6%AC%EB%AC%B8/9%EB%B2%88%20%EC%BF%BC%EB%A6%AC%EB%AC%B8)
 <h2></h2>
 
 - 학과번호와 교수 테이블의 belong 데이터 값을 조인합니다.
