@@ -1,0 +1,9 @@
+/*4. 각 학과에서 학년별 가장 학점이 높은 학생을 보이시오.
+(수석 구하기)*/           
+SELECT dname AS 학과명, sname AS 학생명 , year AS 학년, qpa AS 최고학점 
+FROM Department, Student
+WHERE Department.dnum = Student.major AND (dnum, year, qpa) IN (SELECT dnum, year, MAX(qpa)
+                                                                FROM Department, Student
+                                                                WHERE Department.dnum = Student.major
+                                                                GROUP BY year , dnum)
+ORDER BY dname, year;
