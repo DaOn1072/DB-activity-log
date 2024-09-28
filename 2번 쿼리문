@@ -1,3 +1,6 @@
+/*2. 직급이 3미만 중 지도교수가 아닌 교수의 이름과 교수번호를 보이시오
+(안식년 들어간 교수를 대신해서 지도교수를 맡아줄 수 있는 사람)*/
+
 SELECT pnum AS 교수번호, pname AS 교수명, ppos AS 직급호봉
 FROM Professor
 WHERE ppos BETWEEN 11 AND 29 AND NOT EXISTS(SELECT *
