@@ -1,0 +1,18 @@
+/*학과와 학과별 평균 학점 뷰 생성*/
+CREATE VIEW vw_DepartmentQpa0 (dname, qpa)
+AS SELECT de.dname AS 학과명, ROUND(AVG(st.qpa),1) AS 평균학점
+FROM Department de, Student st 
+WHERE de.dnum = st.major
+GROUP BY de.dname;
+
+SELECT *
+FROM vw_DepartmentQpa0;
+
+
+/*3. 스마트it학과에서 학과 평균 학점보다 높은 학점인 학생을 보이시오*/
+SELECT dname AS 학과명, sname AS 학생명, qpa AS 학점
+FROM Department, Student
+WHERE Department.dnum = Student.major AND 
+    dname LIKE '스마트%' AND qpa >= (SELECT AVG(qpa)
+                                    FROM vw_DepartmentQpa0
+                                    WHERE dname LIKE '스마트%');
