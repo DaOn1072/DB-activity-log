@@ -110,7 +110,8 @@
 <h2></h2>
 
 <h3> 🖥 SQL 쿼리문 작성 🖥 </h3>
-[테이블 생성 SQL](테이블 생성 SQL문.txt)
+
+* [테이블 생성 SQL](https://github.com/DaOn1072/DB-activity-log/blob/2a1a97a712d8d55a7841170f76bd4dcaec3c72c6/%ED%85%8C%EC%9D%B4%EB%B8%94%20%EC%83%9D%EC%84%B1%20SQL%EB%AC%B8.txt)
 
 
 
