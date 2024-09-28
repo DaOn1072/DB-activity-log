@@ -120,7 +120,7 @@
 <div markdown="1">
 </br>
 
-- [테이블 생성 SQL](https://github.com/DaOn1072/DB-activity-log/blob/main/%ED%85%8C%EC%9D%B4%EB%B8%94%20%EC%83%9D%EC%84%B1%20SQL%EB%AC%B8.txt)
+- [테이블 생성 SQL](https://github.com/DaOn1072/DB-activity-log/blob/main/%EC%BF%BC%EB%A6%AC%EB%AC%B8/10%EB%B2%88%20%EC%BF%BC%EB%A6%AC%EB%AC%B8)
 <h2></h2>
 
 - 학생이 등록한 과목을 알아야하기 때문에 학생 테이블의 키본키 학번과 등록 테이블의 외래키 학번을 조인합니다.
@@ -229,7 +229,7 @@
 <div markdown="1">
 </br>
 
-- [테이블 생성 SQL](https://github.com/DaOn1072/DB-activity-log/blob/main/%ED%85%8C%EC%9D%B4%EB%B8%94%20%EC%83%9D%EC%84%B1%20SQL%EB%AC%B8.txt)
+- [8번 쿼리문 답](https://github.com/DaOn1072/DB-activity-log/blob/main/%ED%85%8C%EC%9D%B4%EB%B8%94%20%EC%83%9D%EC%84%B1%20SQL%EB%AC%B8.txt)
 <h2></h2>
 
 </div>
@@ -241,7 +241,7 @@
 <div markdown="1">
 </br>
 
-- [테이블 생성 SQL](https://github.com/DaOn1072/DB-activity-log/blob/main/%ED%85%8C%EC%9D%B4%EB%B8%94%20%EC%83%9D%EC%84%B1%20SQL%EB%AC%B8.txt)
+- [9번 쿼리문 답](https://github.com/DaOn1072/DB-activity-log/blob/main/%ED%85%8C%EC%9D%B4%EB%B8%94%20%EC%83%9D%EC%84%B1%20SQL%EB%AC%B8.txt)
 <h2></h2>
 
 - 학과번호와 교수 테이블의 belong 데이터 값을 조인합니다.
@@ -257,7 +257,7 @@
 <div markdown="1">
 </br>
 
-- [테이블 생성 SQL](https://github.com/DaOn1072/DB-activity-log/blob/main/%ED%85%8C%EC%9D%B4%EB%B8%94%20%EC%83%9D%EC%84%B1%20SQL%EB%AC%B8.txt)
+- [10번 쿼리문 답](https://github.com/DaOn1072/DB-activity-log/blob/main/%EC%BF%BC%EB%A6%AC%EB%AC%B8/10%EB%B2%88%20%EC%BF%BC%EB%A6%AC%EB%AC%B8)
 <h2></h2>
 
 - NOt IN 연산자를 사용해 1학년인 학생 중 2년제 학과에 다니는 학생을 찾습니다.
