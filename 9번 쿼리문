@@ -1,0 +1,8 @@
+/*9. 3년제 학과의 2학년 지도교수들에게 공지사항을 전달해야 한다. 해당하는 지도 교수들의 학과명, 교수명, 전화번호를 보이시오.*/
+SELECT dname AS 학과명, pname AS 교수명, pphone AS 전화번호
+FROM Department, Professor, Student
+WHERE Department.dnum = Professor.belong AND Professor.pnum = Student.advise AND year = 2
+      AND dnum IN (SELECT  dnum
+                    FROM vw_Department3y)
+GROUP BY dname, pname, pphone
+ORDER BY dname;
