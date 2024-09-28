@@ -1,0 +1,3 @@
+SELECT st.snum AS 학번, st.sname AS 학생명, co.cname AS 강의명, en.grade AS 성적
+FROM student st, enrol en, course co
+WHERE st.snum = en.snum AND en.cnum = co.cnum and grade < 70;
