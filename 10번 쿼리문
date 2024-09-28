@@ -1,0 +1,14 @@
+/*10. 만약 2년제 학과 학생들이 식품영양과로 전과한다면, 전과가 가능한 1학년 학생들을 보이시오. 
+단, 학점이 식품영양과의 평균 학점보다 높아야 한다.*/
+SELECT dname AS 학과명, sname AS 학생명, qpa AS 학점, year AS 학년
+FROM Department, Student
+WHERE Department.dnum = Student.major AND year = 1 AND dnum NOT IN (SELECT  dnum
+                                                                    FROM vw_Department3y)
+GROUP BY dname, sname, qpa, year
+HAVING qpa >= (SELECT AVG(qpa)
+                FROM vw_DepartmentQpa0
+                WHERE dname LIKE '식품영양과')
+ORDER BY qpa desc;
+
+DROP VIEW vw_Student;
+DROP VIEW vw_Lecture;
